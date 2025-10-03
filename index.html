@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+</head>
+<body>
+    <h1>Food Ordering System</h1>
+
+    <h2>Menu:</h2>
+    <label><input type="checkbox" value="Burger (₱120)" data-price="120"> Burger (₱120)</label><br>
+    <label><input type="checkbox" value="Fries (₱60)" data-price="60"> Fries (₱60)</label><br>
+    <label><input type="checkbox" value="Pizza (₱200)" data-price="200"> Pizza (₱200)</label><br>
+    <label><input type="checkbox" value="Soda (₱50)" data-price="50"> Soda (₱50)</label><br>
+    <label><input type="checkbox" value="Ice Cream (₱70)" data-price="70"> Ice Cream (₱70)</label><br>
+
+    <h2>Customer Details:</h2>
+    <input type="text" id="name" placeholder="Name"><br>
+    <input type="text" id="address" placeholder="Address"><br>
+    <input type="text" id="contact" placeholder="Contact Number"><br><br>
+
+    <button py-click="create_order">Create Order</button>
+
+    <div id="output"></div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
